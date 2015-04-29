@@ -207,8 +207,6 @@ echo '##### LEMP instalado correctamente :) #####'
 echo 'Quieres configurar Servidores Virtuales para Nginx? [s/N]: '
 read respuesta_vh
 
-echo 'Quieres configurar Servidores Virtuales para Nginx? [s/N]: '
-read respuesta_vh
 while [ "$respuesta_vh" = 's' ]
 do
 	echo 'Puerto para el Servidor Virtual default:[80] '
