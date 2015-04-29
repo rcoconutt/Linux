@@ -358,7 +358,7 @@ do
 	#		try_files $uri $uri/ =404;
 	#	}
 	#}' >> /etc/nginx/sites-available/$servidor_vh
-	ln -s /etc/nginx/sites-available/$servidor_vh /etc/nginx/sites-enabled//$servidor_vh
+	sudo ln -s /etc/nginx/sites-available/$servidor_vh /etc/nginx/sites-enabled//$servidor_vh
 
 	sudo sh -c "echo $ip_vh      $servidor_vh     www.$servidor_vh >> /etc/hosts"
 	sudo service nginx restart
@@ -368,4 +368,5 @@ do
 	echo 'Quieres configurar otro Servidor Virtual para Nginx? [s/N]: '
 	read respuesta_vh
 done
+	sudo service nginx restart
 fi
