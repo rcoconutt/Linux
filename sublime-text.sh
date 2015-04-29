@@ -1,5 +1,10 @@
 #!/bin/bash
-# Tested on Debian Wheezy 7.x
+# Sublime Text 2 Install & Crack for Debian
+# Tested on Debian wheezy/jessie
+# Author: @HackeaMesta
+# Version: 1.0
+# License: GPLv2
+
 clear scr
 echo '+--------------------------------+'
 echo '|   Sublime Text 2 1NST4LL3R     |'
