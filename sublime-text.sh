@@ -31,7 +31,7 @@ cd /tmp/
 	fi
 	while [ "$respuesta" != "S" ] && [ "$respuesta" != "s" ] && [ "$respuesta" != "N" ] && [ "$respuesta" != "n" ]; do
 		echo ''
-		echo 'Deseas crackear Sublime Text ahora? [S/n]: '
+		echo 'Quieres crackear Sublime Text? [S/n]: '
 		read respuesta
 		if [ "$respuesta" == "S" ] || [ "$respuesta" == "s" ]; then
 			cd /usr/lib/sublime-text-2/
@@ -80,7 +80,7 @@ Name=New Window
 Exec="/usr/bin/sublime_text -n"' >> /usr/share/applications/sublime-text.desktop
 clear scr
 echo '################################'
-echo 'Sublime Text se instalo correctamente, si tienes problemas con la activación, dirigite a: Help > e introduce la licencia manualmente :)'
+echo 'Sublime Text se instalo correctamente, si tienes problemas con la activación, dirigite a: "Help" > "Enter License" e introduce la licencia manualmente'
 echo ''
 echo '-----BEGIN LICENSE-----
 Patrick Carey
