@@ -2,10 +2,11 @@
 # LEMP (Nginx, MySQL, PHP) installer for Debian
 # Tested on Debian wheezy/jessie
 # Author: @HackeaMesta
-# Change codename (squeeze,wheezy,jessie) for debian on 21 & 22 line
+# Version: 1.1
+# Change codename (squeeze, wheezy, jessie) for debian on 24 & 25 line
 
 echo '+-----------------------+'
-echo '|   NGINX INSTALLER     |'
+echo '|   LEMP INSTALLER     |'
 echo '+-----------------------+'
 echo ''
 if [[ $EUID -ne 0 ]]; then
@@ -20,8 +21,8 @@ if [[ "$respuesta_repo" = "s"  ]]; then
 	if [[ "$pais" = "" ]]; then
 		pais='us'
 	fi
-	echo 'deb http://ftp.'"$pais"'.debian.org/debian/ wheezy main non-free contrib
-deb-src http://ftp.'"$pais"'.debian.org/debian/ wheezy main non-free contrib' >> /etc/apt/sources.list
+	echo 'deb http://ftp.'"$pais"'.debian.org/debian/ jessie main non-free contrib
+deb-src http://ftp.'"$pais"'.debian.org/debian/ jessie main non-free contrib' >> /etc/apt/sources.list
 	echo '##### Repositorios agregados correctamente #####'
 	echo '------------------------------'
 	echo ''	
